@@ -71,7 +71,6 @@ export const TodoList = ({ todos }: TodoProps) => {
   const { mutate: updateTodoStatus, isLoading: isUpdatingTodo } =
     api.todoStatus.update.useMutation({
       onSuccess: () => {
-        // có thể sửa api để trả về updatedTodo và không cần phải get lại
         apiContext.todo.getAll.refetch()
       },
     })
