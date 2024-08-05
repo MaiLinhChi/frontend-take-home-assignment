@@ -1,6 +1,7 @@
 import type { AppType } from 'next/app'
 
 import '../utils/client/styles/tailwind.css'
+import '../utils/client/styles/style.css'
 
 import { Fragment, lazy } from 'react'
 import { Manrope } from 'next/font/google'
